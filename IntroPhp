@@ -1,0 +1,91 @@
+<?php
+
+echo 'Ciao mondo1';
+echo '<br>';
+$var=10;
+echo 'il valore della variabile è ' .$var;
+echo '<br>';
+var_dump($var);
+$var2=105.5;
+echo 'il valore della variabile è ' .$var2;
+echo '<br>';
+var_dump($var2);
+$var='ciao';
+var_dump($var2);
+echo '<br>';
+
+echo PHP_INT_MAX;
+echo PHP_INT_MIN;
+if($var2>5)
+    echo'confrontoeffettuato2';
+else echo 'ciao';
+echo 'br';
+
+echo 'Dichiarazione vettore';
+$vett=[];
+$vett1=[10,20,30];
+echo '<br>';
+#echo phpinfo();
+
+echo 'Visualizzo primo elemento';
+echo$vett1[0];
+
+echo 'Conteggio elementi del vettore';
+$n=count($vett1);
+echo $n;
+echo '<br>';
+for($i=0;$i<$n;$i++){
+    echo $vett1[$i];
+    echo '<br>';
+}
+
+echo 'Conteggio elementi del vettore con orint_r';
+echo '<br>';
+print_r($vett1);
+echo '<br>';
+var_dump($vett1);
+echo '<br>';
+$vett2=[10,20,30,'a','b'];
+var_dump($vett2);
+array_push($vett2, 50);
+echo '<br>';
+echo implode(" ",$vett2);
+$vett2[]=60;
+echo '<br>';
+echo implode(" ",$vett2);
+echo '<br>';
+
+echo 'Aggiungo elemento alla fine';
+array_pop($vett2);
+echo '<br>';
+echo implode(" ",$vett2);
+echo '<br>';
+
+echo 'Cancella elemento all inizio';
+array_pop($vett2);
+echo '<br>';
+echo implode(" ",$vett2);
+echo '<br>';
+
+echo 'Controllo esistenza elemento contenuto nel vettore';
+echo '<br>';
+if(in_array(100, $vett2))
+    echo 'il numero esiste';
+else echo 'il numero non esiste nle vettore';
+echo '<br>';
+
+echo 'Ordino il vettore';
+echo '<br>';
+sort($vett2);
+echo implode(" ",$vett2);
+echo '<br>';
+
+$studente =[
+    'nome'=>"Marco",
+    "eta"=>18
+];
+
+echo $studente["nome"];
+echo '<br>';
+echo $studente["eta"];
+
