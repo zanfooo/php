@@ -108,5 +108,3 @@ $items2 = $items;
 array_splice($items2, 1, 2, ["X"]);
 print_r($items2);
 echo "\n";
-
-echo "=== FINE TEST ===\n";
