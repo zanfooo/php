@@ -1,0 +1,15 @@
+<?php
+echo getcwd(), '<br>';
+echo DIRECTORY_SEPARATOR, '<br>';
+$path = getcwd();
+echo is_file($path.DIRECTORY_SEPARATOR.'testo.txt') ? 'true' : 'false' ,'<br>';
+echo is_dir($path.DIRECTORY_SEPARATOR.'Nuova') ? 'true' : 'false' ,'<br>';
+$items = scandir($path.DIRECTORY_SEPARATOR.'Nuova');
+echo '<br>';
+
+echo '<h1>File nella mia directory</h1>','<br>';
+echo '<ul>';
+foreach ($items as $item){
+    echo '<li>'.$item.'</li>';
+}
+echo '<ul>';
