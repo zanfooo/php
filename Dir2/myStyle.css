@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+p {
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+/* ===== TABELLA STUDENTI ===== */
+table.studenti {
+    border-collapse: collapse;
+    width: 60%;
+    margin-top: 20px;
+    background-color: white;
+}
+
+table.studenti th,
+table.studenti td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+}
+
+table.studenti th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+footer {
+    background-color: #d2d2d2;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
