@@ -15,7 +15,7 @@ $citta = $_POST['citta'] ?? "";
 $nazionalita = $_POST['nazionalita'] ?? [];
 $area = $_POST['area'] ?? "";
 
-$hash = PASSWORD_HASH($password, PASSWORD_DEFAULT);
+$hash = password_hash($password, PASSWORD_DEFAULT);
 
 
 $attributi = [
