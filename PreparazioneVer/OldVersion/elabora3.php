@@ -60,19 +60,19 @@ $dati = [
 
     <tr>
         <?php foreach($attributi as $attributo): ?>
-            <th> <?= $attributo?> </th>
+            <td> <?= $attributo?> </td>
         <?php endforeach ?>
     </tr>
 
     <tr>
         <?php foreach ($dati as $dato): ?>
-            <th>
+            <td>
                 <?php if (is_array($dato)) {
                     echo implode(", ", $dato);
                 } else {
                     echo $dato;
                 } ?>
-            </th>
+            </td>
         <?php endforeach ?>
     </tr>
 
